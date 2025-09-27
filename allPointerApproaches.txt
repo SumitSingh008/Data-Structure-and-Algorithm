@@ -1,0 +1,85 @@
+# =============================================
+# 2-Pointer Pattern⭐⭐
+# Example: Linked List – Find middle / cycle
+#          Array/String – Two sum / sliding window
+# =============================================
+function twoPointer(arr):
+    left = 0
+    right = n-1
+    while left < right:
+        # apply your condition
+        if condition_met:
+            # process / return / count
+            left += 1
+            right -= 1
+        elif need_more:
+            left += 1
+        else:
+            right -= 1
+
+# =============================================
+# 3-Pointer Pattern ⭐⭐⭐
+# Example: Linked List – Reverse / Merge / Detect cycle
+#          Array – 3Sum
+# =============================================
+function threePointer(arr):
+    for i = 0 to n-3:           # fix first element
+        left = i+1               # moving pointer from left
+        right = n-1              # moving pointer from right
+        while left < right:
+            total = arr[i] + arr[left] + arr[right]
+            if total == target:
+                add_to_result
+                left += 1
+                right -= 1
+            elif total < target:
+                left += 1
+            else:
+                right -= 1
+
+# =============================================
+# 4-Pointer Pattern ⭐⭐⭐⭐
+# Example: Array – 4Sum
+# =============================================
+function fourPointer(arr):
+    sort(arr)                   # required for two-pointer inside
+    for i = 0 to n-4:           # fix first element
+        for j = i+1 to n-3:     # fix second element
+            left = j+1          # third pointer moves forward
+            right = n-1         # fourth pointer moves backward
+            while left < right:
+                total = arr[i] + arr[j] + arr[left] + arr[right]
+                if total == target:
+                    add_to_result
+                    left += 1
+                    right -= 1
+                elif total < target:
+                    left += 1
+                else:
+                    right -= 1
+
+# =============================================
+# Linked List – Reversal (3-Pointer) ⭐⭐⭐
+# =============================================
+function reverseLinkedList(head):
+    prev = null
+    curr = head
+    while curr != null:
+        next = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next
+    return prev   # new head
+
+# =============================================
+# Linked List – Cycle Detection (2-Pointer) ⭐⭐
+# =============================================
+function detectCycle(head):
+    slow = head
+    fast = head
+    while fast != null and fast.next != null:
+        slow = slow.next
+        fast = fast.next.next
+        if slow == fast:
+            return true
+    return false

@@ -1,0 +1,29 @@
+# =============================================
+# Sliding Window Template
+# Works for: Arrays / Strings
+# Problems: Longest substring without repeating chars,
+#           Minimum window substring, Max sum subarray of size k, etc.
+# =============================================
+
+function slidingWindow(arr or string, k_or_condition):
+    start = 0
+    end = 0
+    # For dynamic window, use hashmap or frequency array
+    freq_map = {}
+
+    while end < n:
+        # Step 1: include new element at 'end'
+        add arr[end] or string[end] to freq_map / update sum
+
+        # Step 2: shrink window if needed (condition violated)
+        while window_invalid(freq_map or sum or condition):
+            remove arr[start] from freq_map / update sum
+            start += 1
+
+        # Step 3: update result if needed
+        update_result(start, end, freq_map or sum or length)
+
+        # Step 4: expand window
+        end += 1
+
+    return result
