@@ -33,7 +33,7 @@ class Pen {
     }
 }*/
 
-public class sbKuchh {
+public class oops {
     public static void main(String[] args) {
         // object creation
         Student s1 = new Student("Sumit", 21, 101);

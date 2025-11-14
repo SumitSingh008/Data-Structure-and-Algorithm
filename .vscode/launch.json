@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BST",
+            "request": "launch",
+            "mainClass": "Trees.BST",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
+            "name": "implementation",
+            "request": "launch",
+            "mainClass": "Trees.implementation",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
             "name": "BinaryTree",
             "request": "launch",
             "mainClass": "Trees.BinaryTree",
