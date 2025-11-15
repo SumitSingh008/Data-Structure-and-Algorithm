@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "traversal",
+            "request": "launch",
+            "mainClass": "Trees.traversal",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
             "name": "BST",
             "request": "launch",
             "mainClass": "Trees.BST",
