@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "segmentTree",
+            "request": "launch",
+            "mainClass": "Trees.segmentTree",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
+            "name": "AVLTreeDemo",
+            "request": "launch",
+            "mainClass": "Trees.AVLTreeDemo",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
             "name": "traversal",
             "request": "launch",
             "mainClass": "Trees.traversal",
