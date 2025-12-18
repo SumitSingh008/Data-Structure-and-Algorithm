@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "findLevelOrderSuccessor",
+            "request": "launch",
+            "mainClass": "Trees.findLevelOrderSuccessor",
+            "projectName": "Data-Structure-and-Algorithm_ef027dac"
+        },
+        {
+            "type": "java",
             "name": "segmentTree",
             "request": "launch",
             "mainClass": "Trees.segmentTree",
