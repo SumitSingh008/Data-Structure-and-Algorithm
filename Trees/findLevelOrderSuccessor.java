@@ -10,7 +10,7 @@ public class findLevelOrderSuccessor {
             val = x;
         }
     }
-
+ 
     public static TreeNode findSuccessor(TreeNode root, int key) {
         if (root == null) {
             return null;
@@ -20,7 +20,7 @@ public class findLevelOrderSuccessor {
         queue.offer(root); // .offer() is used to add elements to the queue
 
         while (!queue.isEmpty()) {
-            TreeNode currentNode = queue.poll();
+            TreeNode currentNode = queue.poll(); // .poll() is used to remove and return the head of the queue
 
             if (currentNode.left != null) {
                 queue.offer(currentNode.left);
